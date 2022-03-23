@@ -6,12 +6,13 @@ function Form(props) {
     function handleChange(e) {
         setName(e.target.value);
     }
-    
+
     function handleSubmit(e) {
         e.preventDefault();
         props.addTask(name);
         setName("");
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <h2 className="label-wrapper">

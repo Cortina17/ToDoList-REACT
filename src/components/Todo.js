@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-
 function usePrevious(value) {
     const ref = useRef();
     useEffect(() => {
@@ -8,7 +7,6 @@ function usePrevious(value) {
     });
     return ref.current;
 }
-
 
 export default function Todo(props) {
     const [isEditing, setEditing] = useState(false);
